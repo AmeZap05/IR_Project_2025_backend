@@ -13,6 +13,8 @@ async def lifespan(app: FastAPI):
     print("🚀 Server is starting, running initialization script...")
     # Creates db tables if them do not exist yet
 
+    # TODO run background indexing process
+
     # The app is running after this point
     yield
 
